@@ -31,3 +31,10 @@ The dataset used for this project consists of historical stock data for Yes Bank
 5. **Results** The results section will present the findings of the regression analysis, including the performance of different models and their predictions for Yes Bank's closing prices.
 
 # Random Forest
+
+![Random-Forest-Algorithm-1024x576](https://github.com/user-attachments/assets/7621f9eb-6df7-4e2e-b42e-28ac2419afa7)
+
+ Random Forest builds multiple decision trees from bootstrap samples of the original dataset, introducing randomness by selecting a random subset of features at each split. This technique helps create less correlated trees, enhancing the model's robustness and predictive performance. In classification, the final output is determined by majority voting, where each tree votes for a class, and the class with the most votes is chosen. In regression, the final prediction is the average of all the trees' outputs. This approach reduces the risk of overfitting, a common issue with single decision trees, and generally improves accuracy.
+
+ # XGBoost
+
