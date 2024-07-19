@@ -34,7 +34,21 @@ The dataset used for this project consists of historical stock data for Yes Bank
 
 ![Random-Forest-Algorithm-1024x576](https://github.com/user-attachments/assets/7621f9eb-6df7-4e2e-b42e-28ac2419afa7)
 
- Random Forest builds multiple decision trees from bootstrap samples of the original dataset, introducing randomness by selecting a random subset of features at each split. This technique helps create less correlated trees, enhancing the model's robustness and predictive performance. In classification, the final output is determined by majority voting, where each tree votes for a class, and the class with the most votes is chosen. In regression, the final prediction is the average of all the trees' outputs. This approach reduces the risk of overfitting, a common issue with single decision trees, and generally improves accuracy.
+ Random Forest builds multiple decision trees from bootstrap samples of the original dataset, introducing randomness by selecting a random subset of features at each split. This technique helps create less     
+ correlated trees, enhancing the model's robustness and predictive performance. In classification, the final output is determined by majority voting, where each tree votes for a class, and the class with the most 
+ votes is chosen. In regression, the final prediction is the average of all the trees' outputs. This approach reduces the risk of overfitting, a common issue with single decision trees, and generally improves 
+ accuracy.
 
  # XGBoost
+ ![img-3](https://github.com/user-attachments/assets/ae3db65c-2a57-4136-9184-7631d6f234b0) 
+ XGBoost (eXtreme Gradient Boosting) is an advanced implementation of the gradient boosting technique for supervised learning tasks, known for its speed and performance. It builds an ensemble of trees sequentially, where each new tree attempts to correct the errors made by the previous ones. This is achieved by optimizing a specific loss function and adding new trees to model the residuals of the predictions. XGBoost incorporates several enhancements to improve its efficiency and effectiveness, such as regularization to prevent overfitting, a weighted quantile sketch algorithm for handling sparse data, and parallel processing capabilities to speed up training. These features make XGBoost particularly suitable for large-scale datasets and high-dimensional data. Additionally, XGBoost includes functionalities for early stopping, missing value handling, and cross-validation. It is widely used in machine learning competitions and practical applications due to its ability to deliver high predictive performance with relatively low computational cost.
+
+ # Conclusion 
+ Our first and base model was Linear regression, and got a decent training and testing score of 0.82 and 0.76 respectively with high MSE and MAE metric score.
+
+Then we implemented Ridge, lasso and ElasticNet regularization models and the Lasso model was found to as a better model with 0.83 r2-score and MSE and MAE was also very low as compared to base model.
+
+Then we tried Polyfit model which was giving a pretty good result but was performing very bad in cross-validation.
+
+Then we implemented Random Forest Regressor and XGboost Regressor, both of them were performing far better than other previous models at every metric..
 
